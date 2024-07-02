@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Earnings and Savings Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Property Earnings Estimator Form -->
+        <div class="calculator">
+            <h1>Property Earnings Estimator</h1>
+            <form id="earnings-form">
+                <label for="original-price">Original House Price:</label>
+                <input type="number" id="original-price" required>
+                
+                <label for="mortgage-amount">Mortgage Amount:</label>
+                <input type="number" id="mortgage-amount" required>
+                
+                <label for="interest-rate">Interest Rate per Year (%):</label>
+                <input type="number" step="0.01" id="interest-rate" required>
+                
+                <label for="amortization-period">Amortization Period (years):</label>
+                <input type="number" id="amortization-period" required>
+                
+                <label for="estimated-sell-price">Estimated Sell Price:</label>
+                <input type="number" id="estimated-sell-price" required>
+                
+                <button type="button" id="calculate-earnings-button">Calculate</button>
+                <button type="button" id="clear-earnings-button">Clear</button>
+            </form>
+            <div id="earnings-results"></div>
+        </div>
+        
+        <!-- Savings Calculator Form -->
+        <div class="calculator">
+            <h1>Savings Calculator</h1>
+            <form id="savings-form">
+                <label for="original-savings">Original Savings Amount:</label>
+                <input type="number" id="original-savings" required>
+                
+                <label for="annual-contribution">Annual Savings Contribution:</label>
+                <input type="number" id="annual-contribution" required>
+                
+                <label for="savings-years">Years of Savings:</label>
+                <input type="number" id="savings-years" required>
+                
+                <label for="savings-interest-rate">Interest Rate per Year (%):</label>
+                <input type="number" step="0.01" id="savings-interest-rate" required>
+                
+                <button type="button" id="calculate-savings-button">Calculate</button>
+                <button type="button" id="clear-savings-button">Clear</button>
+            </form>
+            <div id="savings-results"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
